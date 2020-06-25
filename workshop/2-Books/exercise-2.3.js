@@ -19,7 +19,8 @@ class BookList {
   }
   add = (newBook) => {
     this.books.push(newBook);
-    this.currentlyReading = this.currentlyReading === null ? newBook : null;
+    console.log(this.currentlyReading)
+    if (this.currentlyReading === null) this.currentlyReading = newBook;
   };
   getNumRead = () => {
     let numRead = 0;
