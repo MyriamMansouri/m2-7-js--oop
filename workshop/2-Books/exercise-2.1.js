@@ -20,7 +20,7 @@ class Book {
     this.title = title;
     this.genre = genre;
     this.author = author;
-    this.isRead = isRead;
+    this.isRead = isRead || false ;
   }
 }
 
@@ -51,8 +51,7 @@ const book4 = new Book(
 const book5 = new Book(
   "Les Origines du totalitarisme",
   "Politics",
-  "Hannah Arendt",
-  false
+  "Hannah Arendt"
 );
 
 console.log(book1, book2, book3, book4, book5);
